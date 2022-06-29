@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/citizensapi-2.0.18-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/EssentialsX-2.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/ParticleAPI_v2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/PlayerPoints.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/Vault.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/worldedit-bukkit-6.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/worldguard-6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/LuckPerms-Bukkit-3.2.20.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/MVdWPlaceholderAPI.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/EffectLib-5.0.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/ProtocolLib.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/PrisonMines-3.0.5.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/spigot-1.8.8-R0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/spigot-api-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+	<classpathentry kind="lib" path="D:/Everything/java workspace/APIs/Item-NBT-API.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,48 @@
+name: SPrison
+main: Solar.prison.Main
+version: 7.0
+depend: [LuckPerms,Essentials,Vault,WorldGuard,WorldEdit,MVdWPlaceholderAPI,FeatherBoard,ProtocolLib,Citizens,ItemNBTAPI,PrisonMines]
+commands:
+    me:
+        description: Such Wow , much Wow
+        aliases: [toi]
+    xem:
+        description: Such Wow , much Wow
+        aliases: [info]
+    prison:
+        description: Such Wow , much Wow
+        aliases: [pr]
+    qlpp:
+        description: Such Wow , much Wow
+        aliases: [quanliphuphep]
+    en:
+        description: Such Wow , much Wow
+        aliases: [enchant,enchantlist,listenchant,phuphep]
+    spawn:
+        description: Such Wow , much Wow      
+    nangcap:
+        description: Such Wow , much Wow
+        aliases: [nc]
+    mine:
+        description: Such Wow , much Wow
+        aliases: [dc,dichchuyen]
+    lvtop:
+        description: Such Wow , much Wow
+        aliases: [toplv,top]
+    sx:
+        description: Such Wow , much Wow
+        aliases: [sapxep,xepenchant]
+    doiso:
+        description: Such Wow , much Wow
+    sellall:
+        description: Such Wow , much Wow
+        aliases: [sa,banhet]
+    help:
+        description: Such Wow , much Wow
+        aliases: [huongdan,trogiup]
+    choden:
+        description: Such Wow , much Wow
+        aliases: [cd]
+    prestige:
+        description: Such Wow , much Wow
+        aliases: [cs,chuyensinh]

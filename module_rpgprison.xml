@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_rpgprison" default="compile.module.rpgprison">
+  <dirname property="module.rpgprison.basedir" file="${ant.file.module_rpgprison}"/>
+  
+  <property name="module.jdk.home.rpgprison" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.rpgprison" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.rpgprison" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.rpgprison" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="rpgprison.output.dir" value="${module.rpgprison.basedir}/bin"/>
+  <property name="rpgprison.testoutput.dir" value="${module.rpgprison.basedir}/bin"/>
+  
+  <path id="rpgprison.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="rpgprison.module.production.classpath">
+    <path refid="${module.jdk.classpath.rpgprison}"/>
+    <pathelement location="${basedir}/../APIs/citizensapi-2.0.18-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/EssentialsX-2.0.1.jar"/>
+    <pathelement location="${basedir}/../APIs/ParticleAPI_v2.1.1.jar"/>
+    <pathelement location="${basedir}/../APIs/PlayerPoints.jar"/>
+    <pathelement location="${basedir}/../APIs/Vault.jar"/>
+    <pathelement location="${basedir}/../APIs/worldedit-bukkit-6.1.5.jar"/>
+    <pathelement location="${basedir}/../APIs/worldguard-6.2.jar"/>
+    <pathelement location="${basedir}/../APIs/PacketListenerAPI_v3.6.0-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/LuckPerms-Bukkit-3.2.20.jar"/>
+    <pathelement location="${basedir}/../APIs/MVdWPlaceholderAPI.jar"/>
+    <pathelement location="${basedir}/../APIs/Item-NBT-API.jar"/>
+    <pathelement location="${basedir}/../APIs/EffectLib-5.0.jar"/>
+    <pathelement location="${basedir}/../APIs/ProtocolLib.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-1.8.8-R0.1-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-api-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+    <pathelement location="${basedir}/../APIs/PrisonMines.jar"/>
+  </path>
+  
+  <path id="rpgprison.runtime.production.module.classpath">
+    <pathelement location="${rpgprison.output.dir}"/>
+    <pathelement location="${basedir}/../APIs/citizensapi-2.0.18-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/EssentialsX-2.0.1.jar"/>
+    <pathelement location="${basedir}/../APIs/ParticleAPI_v2.1.1.jar"/>
+    <pathelement location="${basedir}/../APIs/PlayerPoints.jar"/>
+    <pathelement location="${basedir}/../APIs/Vault.jar"/>
+    <pathelement location="${basedir}/../APIs/worldedit-bukkit-6.1.5.jar"/>
+    <pathelement location="${basedir}/../APIs/worldguard-6.2.jar"/>
+    <pathelement location="${basedir}/../APIs/PacketListenerAPI_v3.6.0-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/LuckPerms-Bukkit-3.2.20.jar"/>
+    <pathelement location="${basedir}/../APIs/MVdWPlaceholderAPI.jar"/>
+    <pathelement location="${basedir}/../APIs/Item-NBT-API.jar"/>
+    <pathelement location="${basedir}/../APIs/EffectLib-5.0.jar"/>
+    <pathelement location="${basedir}/../APIs/ProtocolLib.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-1.8.8-R0.1-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-api-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+    <pathelement location="${basedir}/../APIs/PrisonMines.jar"/>
+  </path>
+  
+  <path id="rpgprison.module.classpath">
+    <pathelement location="${rpgprison.output.dir}"/>
+    <path refid="${module.jdk.classpath.rpgprison}"/>
+    <pathelement location="${basedir}/../APIs/citizensapi-2.0.18-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/EssentialsX-2.0.1.jar"/>
+    <pathelement location="${basedir}/../APIs/ParticleAPI_v2.1.1.jar"/>
+    <pathelement location="${basedir}/../APIs/PlayerPoints.jar"/>
+    <pathelement location="${basedir}/../APIs/Vault.jar"/>
+    <pathelement location="${basedir}/../APIs/worldedit-bukkit-6.1.5.jar"/>
+    <pathelement location="${basedir}/../APIs/worldguard-6.2.jar"/>
+    <pathelement location="${basedir}/../APIs/PacketListenerAPI_v3.6.0-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/LuckPerms-Bukkit-3.2.20.jar"/>
+    <pathelement location="${basedir}/../APIs/MVdWPlaceholderAPI.jar"/>
+    <pathelement location="${basedir}/../APIs/Item-NBT-API.jar"/>
+    <pathelement location="${basedir}/../APIs/EffectLib-5.0.jar"/>
+    <pathelement location="${basedir}/../APIs/ProtocolLib.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-1.8.8-R0.1-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-api-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+    <pathelement location="${basedir}/../APIs/PrisonMines.jar"/>
+  </path>
+  
+  <path id="rpgprison.runtime.module.classpath">
+    <pathelement location="${rpgprison.output.dir}"/>
+    <pathelement location="${basedir}/../APIs/citizensapi-2.0.18-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/EssentialsX-2.0.1.jar"/>
+    <pathelement location="${basedir}/../APIs/ParticleAPI_v2.1.1.jar"/>
+    <pathelement location="${basedir}/../APIs/PlayerPoints.jar"/>
+    <pathelement location="${basedir}/../APIs/Vault.jar"/>
+    <pathelement location="${basedir}/../APIs/worldedit-bukkit-6.1.5.jar"/>
+    <pathelement location="${basedir}/../APIs/worldguard-6.2.jar"/>
+    <pathelement location="${basedir}/../APIs/PacketListenerAPI_v3.6.0-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/LuckPerms-Bukkit-3.2.20.jar"/>
+    <pathelement location="${basedir}/../APIs/MVdWPlaceholderAPI.jar"/>
+    <pathelement location="${basedir}/../APIs/Item-NBT-API.jar"/>
+    <pathelement location="${basedir}/../APIs/EffectLib-5.0.jar"/>
+    <pathelement location="${basedir}/../APIs/ProtocolLib.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-1.8.8-R0.1-SNAPSHOT.jar"/>
+    <pathelement location="${basedir}/../APIs/spigot-api-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+    <pathelement location="${basedir}/../APIs/PrisonMines.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.rpgprison">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.rpgprison">
+    <patternset refid="compiler.excluded"/>
+    <patternset refid="excluded.from.module.rpgprison"/>
+  </patternset>
+  
+  <path id="rpgprison.module.sourcepath">
+    <dirset dir="${module.rpgprison.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.rpgprison" depends="compile.module.rpgprison.production,compile.module.rpgprison.tests" description="Compile module RpgPrison"/>
+  
+  <target name="compile.module.rpgprison.production" depends="register.custom.compilers" description="Compile module RpgPrison; production classes">
+    <mkdir dir="${rpgprison.output.dir}"/>
+    <javac2 destdir="${rpgprison.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.rpgprison}/javac">
+      <compilerarg line="${compiler.args.rpgprison}"/>
+      <bootclasspath refid="rpgprison.module.bootclasspath"/>
+      <classpath refid="rpgprison.module.production.classpath"/>
+      <src refid="rpgprison.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.rpgprison"/>
+    </javac2>
+    
+    <copy todir="${rpgprison.output.dir}">
+      <fileset dir="${module.rpgprison.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.rpgprison"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.rpgprison.tests" depends="register.custom.compilers,compile.module.rpgprison.production" description="compile module RpgPrison; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.rpgprison" description="cleanup module">
+    <delete dir="${rpgprison.output.dir}"/>
+    <delete dir="${rpgprison.testoutput.dir}"/>
+  </target>
+</project>
